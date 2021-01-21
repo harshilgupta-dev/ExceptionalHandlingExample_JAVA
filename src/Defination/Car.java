@@ -10,7 +10,14 @@ public class Car {
     public void checkSpeed(){
         if(this.speed>=MAXIMUM_SPEED)
         {
-            throw new MaximumSpeedException("!!!!!Over Speed Warning !!!!! Please Slow down your Car");
+            try {
+                throw new MaximumSpeedException("!!!!!Over Speed Warning !!!!! Please Slow down your Car");
+                }
+            catch(MaximumSpeedException mse){
+                System.out.println(mse.getMessage());
+
+
+                  }
         }
         else {
             System.out.println("Drive Safe :)");
