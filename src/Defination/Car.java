@@ -6,6 +6,8 @@ public class Car {
     {
         this.speed= speed;
     }
+    private final double  MAXIMUM_SPEED = 200;
+
 
 
 
